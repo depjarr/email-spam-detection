@@ -1,0 +1,37 @@
+Email Spam Detection
+Proyek ini bertujuan untuk mengklasifikasikan pesan email atau SMS sebagai spam atau ham (bukan spam) menggunakan teknik machine learning dengan pendekatan Natural Language Processing (NLP).
+
+📁 Deskripsi Proyek
+Notebook ini memuat tahapan-tahapan sebagai berikut:
+
+Import Library – Mengimpor pustaka Python yang relevan untuk analisis data, NLP, dan pemodelan.
+
+Load Dataset – Memuat data SMS spam dari file spam.csv dan melakukan praproses awal.
+
+Exploratory Data Analysis (EDA) – Menampilkan distribusi data dan visualisasi untuk memahami sebaran antara spam dan ham.
+
+Preprocessing Teks – Meliputi pembersihan teks, penghapusan karakter khusus, dan konversi menjadi format vektor menggunakan TF-IDF.
+
+Penanganan Data Imbalance – Menggunakan teknik resampling untuk mengatasi ketidakseimbangan kelas.
+
+Modeling – Menggunakan algoritma Naive Bayes (MultinomialNB) untuk melakukan klasifikasi.
+
+Evaluasi Model – Menggunakan metrik akurasi, confusion matrix, dan classification report.
+
+Penyimpanan Model – Menyimpan model dan vectorizer dengan pickle agar bisa digunakan kembali (deployment).
+
+🧪 Library yang Digunakan
+pandas, numpy
+
+scikit-learn
+
+matplotlib, seaborn
+
+re, pickle
+
+🗃️ Dataset
+Dataset digunakan dari file spam.csv dengan dua kolom utama:
+
+label: berisi nilai "ham" atau "spam"
+
+text: berisi isi pesan
